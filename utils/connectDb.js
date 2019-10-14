@@ -6,7 +6,7 @@ async function connectDb() {
 
   if (connection.isConnected) {
   //  use existing db connection
-    console.log('Using existing connection')
+    console.log('Using existing connection');
     return;
   }
   //connect to the database using the env string

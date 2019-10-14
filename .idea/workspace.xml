@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c67cf21-0c61-402e-a6cd-ecd2164e67d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/_App/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/_App/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/_App/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/_App/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/_App/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/_App/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/_App/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/_App/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/api/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/nprogress.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/nprogress.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/connectDb.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/connectDb.js" afterDir="false" />
-
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570824207199</updated>
       <workItem from="1570824208502" duration="8543000" />
-
+      <workItem from="1571077962462" duration="1871000" />
     </task>
     <servers />
   </component>
@@ -72,7 +64,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
