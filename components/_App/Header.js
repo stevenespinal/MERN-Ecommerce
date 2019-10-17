@@ -4,9 +4,7 @@ import {Fragment} from 'react';
 import Router, {useRouter} from "next/router";
 import NProgress from 'nprogress';
 
-Router.onRouteChangeStart = () => {
-  return NProgress.start()
-};
+Router.onRouteChangeStart = () => NProgress.start();
 
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
@@ -31,7 +29,7 @@ function Header() {
               src="../static/logo.svg"
               style={{marginRight: "1em"}}
             />
-            ReactReserve
+            React E-Commerce
           </Menu.Item>
         </Link>
         <Link href="/cart">
