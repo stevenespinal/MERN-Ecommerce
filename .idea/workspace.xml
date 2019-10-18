@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8c67cf21-0c61-402e-a6cd-ecd2164e67d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/_App/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/_App/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/catchErrors.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/catchErrors.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +20,7 @@
   <component name="ProjectId" id="1S4YCZr7sNJ04MvRhKKsLonTaDR" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/mingw64/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,7 +58,8 @@
       <workItem from="1571077962462" duration="9202000" />
       <workItem from="1571271749549" duration="1687000" />
       <workItem from="1571273457620" duration="1057000" />
-      <workItem from="1571293164379" duration="2793000" />
+      <workItem from="1571293164379" duration="3212000" />
+      <workItem from="1571326219191" duration="3567000" />
     </task>
     <servers />
   </component>

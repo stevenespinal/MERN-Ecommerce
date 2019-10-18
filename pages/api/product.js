@@ -30,18 +30,23 @@ async function handleGetRequest(req, res) {
 
 async function handlePostRequest(req, res) {
   const {name, price, description, mediaUrl} = req.body;
-  if (!name || !price || !description || !mediaUrl) {
-    //422 status is when not enough information was provided
-    return res.status(422).send("Product is missing one or more fields");
-  }
-  const product = await new Product({
-    name,
-    price,
-    description,
-    mediaUrl
-  }).save();
+  try {
+    if (!name || !price || !description || !mediaUrl) {
+      //422 status is when not enough information was provided
+      return res.status(422).send("Product is missing one or more fields");
+    }
+    const product = await new Product({
+      name,
+      price,
+      description,
+      mediaUrl
+    }).save();
 //  resource created is a 201 request
-  res.status(201).json(product);
+    res.status(201).json(product);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Server error in creating product")
+  }
 }
 
 async function handleDeleteRequest(req, res) {
