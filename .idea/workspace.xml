@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c67cf21-0c61-402e-a6cd-ecd2164e67d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/_App/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/_App/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/_App/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/_App/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/auth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +60,7 @@
       <workItem from="1571326219191" duration="4995000" />
       <workItem from="1571578091099" duration="1738000" />
       <workItem from="1571596771651" duration="3859000" />
-      <workItem from="1571673251317" duration="7424000" />
+      <workItem from="1571673251317" duration="8014000" />
     </task>
     <servers />
   </component>
