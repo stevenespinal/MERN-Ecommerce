@@ -19,3 +19,8 @@ export function redirectUser(ctx, location) {
     Router.push(location)
   }
 }
+
+export function handleLogout() {
+  cookie.remove('token');
+  Router.push("/login");
+}

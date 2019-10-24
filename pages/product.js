@@ -4,11 +4,11 @@ import ProductSummary from '../components/Product/ProductSummary';
 import ProductAttributes from '../components/Product/ProductAttributes';
 import AddProductToCart from '../components/Product/AddProductToCart';
 import baseUrl from "../utils/baseUrl";
-function Product({product}) {
+function Product({product, user}) {
   return (
     <Fragment>
       <ProductSummary {...product}/>
-      <ProductAttributes {...product}/>
+      <ProductAttributes user={user} {...product}/>
     </Fragment>
   );
 }

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {Fragment} from 'react';
 import Router, {useRouter} from "next/router";
 import NProgress from 'nprogress';
+import {handleLogout} from '../../utils/auth';
 
 Router.onRouteChangeStart = () => NProgress.start();
 
@@ -15,6 +16,9 @@ function Header({user}) {
   }
   //gives back content about the router
   const router = useRouter();
+  const isRoot = user && user.role === 'root';
+  const isAdmin = user && user.role === 'admin';
+  const isRootOrAdmin = isRoot || isAdmin;
   // const user = false;
 
 
@@ -44,7 +48,7 @@ function Header({user}) {
             Cart
           </Menu.Item>
         </Link>
-        {user && <Link href="/create">
+        {isRootOrAdmin && <Link href="/create">
           <Menu.Item header active={isActive('/create')}>
             <Icon
               name="add square"
@@ -63,7 +67,7 @@ function Header({user}) {
                 Account
               </Menu.Item>
             </Link>
-            <Menu.Item header>
+            <Menu.Item onClick={handleLogout} header>
               <Icon
                 name="sign out"
                 size="large"
