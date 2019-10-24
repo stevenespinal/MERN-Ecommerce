@@ -3,7 +3,8 @@ import Layout from "../components/_App/Layout";
 import {parseCookies, destroyCookie} from "nookies";
 import {redirectUser} from "../utils/auth";
 import baseUrl from "../utils/baseUrl";
-import axios from 'axios'
+import axios from 'axios';
+import Router from 'next/router';
 
 // _app gives us access to every single page
 // useful for authenticating users
@@ -50,6 +51,19 @@ class MyApp extends App {
     }
     return {pageProps};
   }
+
+  componentDidMount() {
+    window.addEventListener('storage', this.syncLogout);
+  }
+
+  syncLogout = event => {
+    const {key} = event;
+    if (key === 'logout') {
+      console.log("logged out from storage");
+      Router.push("/login")
+    }
+  };
+
 
   render() {
     const {Component, pageProps} = this.props;
