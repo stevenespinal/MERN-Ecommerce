@@ -8,3 +8,14 @@ export function handleLogin(token) {
   // redirects back to /account route
   Router.push("/account");
 }
+
+export function redirectUser(ctx, location) {
+//  since we have access to ctx we can redirect from server side
+  if (ctx.req) {
+    // 302 status code shows it's a redirect
+    ctx.res.writeHead(302, {Location: location});
+    ctx.res.end();
+  } else {
+    Router.push(location)
+  }
+}

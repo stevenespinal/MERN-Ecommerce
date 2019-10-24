@@ -4,6 +4,7 @@ import Link from "next/link";
 import catchErrors from "../utils/catchErrors";
 import baseUrl from "../utils/baseUrl";
 import axios from 'axios';
+import {handleLogin} from "../utils/auth";
 
 const INITIAL_USER = {
   email: "",
@@ -36,7 +37,8 @@ function Login() {
       //  make request to signup the user
       const url = `${baseUrl}/api/login`;
       const payload = {...user};
-      await axios.post(url, payload);
+      const response = await axios.post(url, payload);
+      handleLogin(response.data);
     } catch (error) {
       catchErrors(error, setError);
     } finally {
@@ -82,7 +84,7 @@ function Login() {
           />
           <Button
             disabled={disabled || loading}
-            icon="sign in "
+            icon="sign in"
             type="submit"
             color="red"
             content="login"/>
