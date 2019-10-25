@@ -1,8 +1,10 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, Fragment} from 'react';
 import axios from 'axios';
 import ProductList from '../components/Index/ProductList';
+import ProductPagination from '../components/Index/ProductPagination';
 import baseUrl from '../utils/baseUrl';
-function Home({products}) {
+
+function Home({products, totalPages}) {
   //interact with api and outside functionality
   // console.log(products);
   //second argument is dependencies that determine what the function runs
@@ -17,17 +19,28 @@ function Home({products}) {
   //   console.log(respo,nse.data)
   // }
 
-  return <ProductList products={products}/>;
+  return (
+    <Fragment>
+      <ProductList products={products}/>
+      <ProductPagination totalPages={totalPages}/>
+    </Fragment>
+  );
 }
 
 
 // fetching data this way will fetch the data first on the server side
-Home.getInitialProps = async () => {
-//  fetch data on server
-//  return res data as an object
+Home.getInitialProps = async ctx => {
+  console.log(ctx.query);
+  const page = ctx.query.page ? ctx.query.page : "1";
+  const size = 9;
+  //  fetch data on server
+  //  return res data as an object
   const url = `${baseUrl}/api/products`;
-  const response = await axios.get(url);
-  return {products: response.data}
+  const payload = {
+    params: {page, size}
+  };
+  const response = await axios.get(url, payload);
+  return response.data;
 //  object will merge with previous / existing props
 };
 
