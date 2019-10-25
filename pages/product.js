@@ -7,7 +7,7 @@ import baseUrl from "../utils/baseUrl";
 function Product({product, user}) {
   return (
     <Fragment>
-      <ProductSummary {...product}/>
+      <ProductSummary user={user} {...product}/>
       <ProductAttributes user={user} {...product}/>
     </Fragment>
   );
