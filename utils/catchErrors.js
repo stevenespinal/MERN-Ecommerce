@@ -1,6 +1,6 @@
 function catchErrors(error, displayError) {
   let errorMsg;
-  const {response, request} = error;
+  const {response, request, message} = error;
   if (response) {
     //req was made and server responded with a status code that is not 2XX range
     errorMsg = response.data;
