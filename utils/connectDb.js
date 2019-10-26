@@ -6,7 +6,7 @@ async function connectDb() {
 
   if (connection.isConnected) {
   //  use existing db connection
-    console.log('Using existing connection');
+    // console.log('Using existing connection');
     return;
   }
   //connect to the database using the env string
@@ -17,7 +17,7 @@ async function connectDb() {
     useUnifiedTopology: true
   });
 
-  console.log('DB Connected');
+  // console.log('DB Connected');
 //  connects to mongo atlas to a server-less app/backend
   connection.isConnected = db.connections[0].readyState;
 }

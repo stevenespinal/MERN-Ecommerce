@@ -1,5 +1,11 @@
 {
-  "name": "reactreserve",
-  "alias": "<insert-your-alias>.now.sh",
-  "version": 1
+  "name": "react-ecommerce",
+  "alias": "mernapp-ecommerce.now.sh",
+  "version": 2,
+  "env": {
+    "MONGO_SRV": "mongodb+srv://admin:admin@cluster0-qafmi.mongodb.net/test?retryWrites=true&w=majority",
+    "JWT_SECRET": "secret",
+    "CLOUDINARY_URL": "https://api.cloudinary.com/v1_1/devrole/image/upload",
+    "STRIPE_SECRET_KEY": "sk_test_3xHArjickW24kDUyK7rrMTSd003usAmBT5"
+  }
 }

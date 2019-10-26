@@ -7,7 +7,7 @@ import baseUrl from "../utils/baseUrl";
 import axios from 'axios';
 
 function Account({user, orders}) {
-  console.log(orders);
+  // console.log(orders);
   return (
     <Fragment>
       <AccountHeader {...user}/>

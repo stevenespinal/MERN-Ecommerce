@@ -43,7 +43,7 @@ export default async (req, res) => {
     });
     //  send token back
     res.status(201).json(token);
-    console.log(newUser);
+    // console.log(newUser);
   } catch (error) {
     console.error(error);
     res.status(500).send('Error signing up user. Please try again later.')

@@ -30,7 +30,7 @@ function Home({products, totalPages}) {
 
 // fetching data this way will fetch the data first on the server side
 Home.getInitialProps = async ctx => {
-  console.log(ctx.query);
+  // console.log(ctx.query);
   const page = ctx.query.page ? ctx.query.page : "1";
   const size = 9;
   //  fetch data on server

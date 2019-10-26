@@ -12,7 +12,7 @@ Router.onRouteChangeError = () => NProgress.done();
 
 function Header({user}) {
   if (user) {
-    console.log(user);
+    // console.log(user);
   }
   //gives back content about the router
   const router = useRouter();
