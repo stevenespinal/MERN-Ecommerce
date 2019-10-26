@@ -1,15 +1,16 @@
 import {Header, Segment, Accordion, Label, Icon, Button, List, Image} from "semantic-ui-react";
-import {Fragment} from 'react';
+import React, {Fragment} from 'react';
 import {useRouter} from "next/router";
+import formatDate from "../../utils/formatDate";
 
 function AccountOrders({orders}) {
   const router = useRouter();
 
-  function mapOrdersToPanels (orders) {
+  function mapOrdersToPanels(orders) {
     return orders.map(order => ({
       key: order._id,
       title: {
-        content: <Label color="blue" content={order.createdAt}/>
+        content: <Label color="blue" content={formatDate(order.createdAt)}/>
       },
       content: {
         content: (
@@ -17,11 +18,10 @@ function AccountOrders({orders}) {
             <List.Header as="h3">
               Total: ${order.total}
               <Label content={order.email} icon="mail" basic horizontal style={{marginLeft: "1em"}}/>
-
             </List.Header>
             <List>
               {order.products.map(p => (
-                <List.Item>
+                <List.Item key={order._id}>
                   <Image avatar src={p.product.mediaUrl}/>
                   <List.Content>
                     <List.Header>
@@ -42,6 +42,7 @@ function AccountOrders({orders}) {
       }
     }))
   }
+
   return (
     <Fragment>
       <Header as="h2">
@@ -60,7 +61,7 @@ function AccountOrders({orders}) {
             </Button>
           </div>
         </Segment>
-      ): (
+      ) : (
         <Accordion fluid styled exclusive={false} panels={mapOrdersToPanels(orders)}>
 
         </Accordion>
