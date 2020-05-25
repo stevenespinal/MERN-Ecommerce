@@ -1,4 +1,4 @@
-## MERN Stack - React-Ecommerce.
+## MERN Stack: React-Ecommerce
 
 Live Link: https://mernapp-ecommerce.now.sh/
 
