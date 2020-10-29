@@ -10,7 +10,7 @@ async function connectDb() {
     return;
   }
   //connect to the database using the env string
-  const db = await mongoose.connect(process.env.MONGO_SRV, {
+  const db = await mongoose.connect("mongodb+srv://admin:admin@cluster0-qafmi.mongodb.net/test?retryWrites=true&w=majority", {
     useCreateIndex: true,
     useFindAndModify: false,
     useNewUrlParser: true,
